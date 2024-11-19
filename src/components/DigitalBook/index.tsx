@@ -1,10 +1,11 @@
 import { useState } from "react";
 import PageContainer from "./components/PageContainer";
 import { pages } from "@/pages/PageConfig";
-import { PageNavigation } from "../PageNavigation";
+import { PageNavigation, TableOfContents } from "../PageNavigation";
 
 const DigitalBook = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [showIndex, setShowIndex] = useState<boolean>(false);
 
   const CurrentPageComponent = pages[currentPage].component;
 
@@ -25,8 +26,17 @@ const DigitalBook = () => {
         currentPage={currentPage}
         totalPages={pages.length}
         onPageChange={handlePageChange}
-        // onOpenIndex={() => setShowIndex(true)}
+        onOpenIndex={() => setShowIndex(true)}
       />
+
+      {showIndex && (
+        <TableOfContents
+          pages={pages}
+          currentPage={currentPage}
+          onPageSelect={handlePageChange}
+          onClose={() => setShowIndex(false)}
+        />
+      )}
     </>
   );
 };

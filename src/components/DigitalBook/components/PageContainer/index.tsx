@@ -4,7 +4,7 @@ interface PageContainerProps {
 
 const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
   return (
-    <div className="h-[91vh] w-full flex justify-center bg-gray-300 px-4 py-16">
+    <div className="min-h-full min-w-full flex justify-center px-4 py-16">
       {children}
     </div>
   );

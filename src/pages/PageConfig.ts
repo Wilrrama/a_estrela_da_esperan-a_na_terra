@@ -1,7 +1,7 @@
 import Capa from "./1.Capa";
 import VersiculosJoao from "./2.VersiculosJohn";
 
-interface PageConfig {
+export interface PageConfig {
   component: React.ComponentType;
   title: string;
 }
