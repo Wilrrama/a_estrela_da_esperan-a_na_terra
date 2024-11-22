@@ -1,10 +1,10 @@
+import Title from "@/components/Title";
+
 const Usufruir = () => {
   return (
     <div className="mb-16">
       {/* Título do Poema */}
-      <h2 className="text-3xl font-serif text-gray-800 text-center mb-10 border-b border-gray-200 pb-4">
-        Usufruir sem usucapir
-      </h2>
+      <Title title={"Usufruir sem usucapir"} />
 
       {/* Corpo do Poema */}
       <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
