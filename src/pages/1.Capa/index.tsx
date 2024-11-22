@@ -1,6 +1,6 @@
 const Capa = () => {
   return (
-    <div className="pb-8">
+    <div className="mb-16">
       <img
         src="a_estrela_da_esperanca.png"
         alt="A Estrela da Esperança"
