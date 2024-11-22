@@ -4,7 +4,7 @@ const Capa = () => {
       <img
         src="a_estrela_da_esperanca.png"
         alt="A Estrela da Esperança"
-        className="rounded-lg pt-10 self-center mx-auto"
+        className="rounded-lg self-center mx-auto"
       />
 
       <p className="text-2xl font-serif italic text-gray-700 text-center py-2">

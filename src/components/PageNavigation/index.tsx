@@ -78,7 +78,7 @@ export const NavigationButton: React.FC<NavigationButtonProps> = ({
 export const PageNavigation: React.FC<
   PageNavigationProps & { onOpenIndex: () => void }
 > = ({ currentPage, totalPages, onPageChange, onOpenIndex }) => (
-  <div className="bg-gray-900 flex items-center justify-around gap-3 p-4 rounded-lg shadow-md bottom-0 fixed w-full ">
+  <footer className=" flex items-center justify-around gap-3 p-2 rounded-lg  bottom-0 fixed w-full bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 shadow-lg ">
     <button
       onClick={onOpenIndex}
       className="bg-gray-300 text-gray-900 hover:bg-gray-300 hover:scale-105 active:scale-95 transition-all duration-200 "
@@ -102,5 +102,5 @@ export const PageNavigation: React.FC<
       label="Próxima página"
       disabled={currentPage === totalPages - 1}
     />
-  </div>
+  </footer>
 );

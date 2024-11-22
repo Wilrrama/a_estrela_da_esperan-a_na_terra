@@ -1,6 +1,6 @@
 const VersiculosJoao = () => {
   return (
-    <div className="pb-8">
+    <div className="mb-8">
       <div className="text-center p-6 ">
         <p className="text-lg text-gray-700 leading-relaxed">
           Sinos poderosos, cujos toques nos chegam das Elevadas Regiões onde os
